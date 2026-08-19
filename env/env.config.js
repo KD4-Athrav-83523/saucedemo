@@ -4,7 +4,7 @@ import path from 'path';
 const envname = process.env.TEST_ENV || 'qa';
 
 dotenv.config({ 
-  path: path.resolve(__dirname, `${envname}.env`),
+path: `./env/${envname}.env`,
   override: true 
 });
 
